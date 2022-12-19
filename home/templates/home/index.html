@@ -3,40 +3,40 @@
 
 {% block content %}
     <!-- login-signup button -->
-    <div class="d-md-flex justify-content-center py-2 my-3 align-items-center" id="login-signup-section">
+    <div class="d-md-flex justify-content-center py-2 my-3 align-items-center" style="background-color: linen;">
       <div class="">
           <h2 class="text-dark fw-bold h4 d-none d-md-block me-5">Don't miss any event</h2>
       </div>
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <button class="btn btn-outline-primary" type="button">Log in</button>
-          <button class="btn btn-outline-success" type="button">Sign up</button>
+          <a href="{% url 'account_login' %}" class="btn btn-outline-primary" type="button">Log in</a>
+          <a href="{% url 'account_signup' %}" class="btn btn-outline-success" type="button">Sign up</a>
         </div>
     </div>
   
   <!-- Message -->
-  <div class=" d-md-flex container-fluid p-2 mt-5 justify-content-center message-section">
+  <div class=" d-md-flex container-fluid p-2 mt-5 justify-content-center message-section" style="max-width: 1140px">
     <h2 class="h2 text-dark">
         Looking for something to do in Dublin this christmas?
     </h2>
   </div>
-  <div class=" d-md-flex container-fluid p-2 mb-5 justify-content-center message-section">
+  <div class=" d-md-flex container-fluid p-2 mb-5 justify-content-center message-section" style="max-width: 1140px">
     <h2 class="h2 text-dark">
         You've come to the right place!
     </h2>
   </div>
-  <div class=" d-md-flex container-fluid p-2 my-5 justify-content-center message-section">
+  <div class=" d-md-flex container-fluid p-2 my-5 justify-content-center" style="max-width: 1140px">
     <p class="h4">Want an event? Social Dub can help. Meet new people, make friends, share festivities, create a support group, create an event for a business and many more. Find or create your events during these festivities and have fun with Social Dub.</p>
   </div>
     
   <!--all events button -->
   <div class="d-md-flex d-grid gap-2 d-md-block justify-content-center mb-3">
-    <button class="btn btn-success" type="button">Click here to see ALL events</button>
+    <a href="{% url 'events_list' 'all' %}" class="btn btn-success" type="button">Click here to see ALL events</a>
   </div>
 
   <!-- events buttons-->
   <div class="d-md-flex justify-content-center my-3 align-items-center">
     <h2></h2>
-    <div class="row event-section">
+    <div class="row event-section" style="max-width: 1140px">
         <div class="col-md-6 col-lg-3 d-grid mb-2">
 
           <div class="card mb-3" style="background-color: linen;">
@@ -46,7 +46,7 @@
               <p class="card-text">Meeting people and enjoying a good cup of coffee can make you happier than anything else.</p>
             </div>
             <div class="d-grid">
-              <button href="#" class="btn btn-outline-success d-grid gap-2" type="button">See Events</button>
+              <a href="{% url 'events_list' 'all' %}" class="btn btn-outline-success d-grid gap-2" type="button">See Events</a>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
               <p class="card-text">Do you have a wishlist for christmas? Then organize a secret santa event with friends, family or co-workers.</p>
             </div>
             <div class="d-grid">
-              <button href="#" class="btn btn-outline-success d-grid gap-2" type="button">See Events</button>
+              <a href="{% url 'events_list' 'all' %}" class="btn btn-outline-success d-grid gap-2" type="button">See Events</a>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
             <div class="d-grid">
-              <button href="#" class="btn btn-outline-success d-grid gap-2" type="button">See Events</button>
+              <a href="{% url 'events_list' 'all' %}" class="btn btn-outline-success d-grid gap-2" type="button">See Events</a>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
             <div class="d-grid">
-              <button href="#" class="btn btn-outline-success d-grid gap-2" type="button">See Events</button>
+              <a href="{% url 'events_list' 'all' %}" class="btn btn-outline-success d-grid gap-2" type="button">See Events</a>
             </div>
           </div>
         </div>
